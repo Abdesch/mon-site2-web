@@ -3,57 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Prof</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .banner { background: url('https://source.unsplash.com/1600x400/?math') center/cover; padding: 100px; text-align: center; color: white; }
-        .content { padding: 20px; }
-    </style>
+    <title>Math Prof - Cours et Exercices</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Math Prof</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cours">Cours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#exercices">Exercices</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="banner">
+
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#cours">Cours</a></li>
+                <li><a href="#exercices">Exercices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
         <h1>Bienvenue sur Math Prof</h1>
-        <p>Ressources et exercices pour apprendre les mathématiques</p>
-    </div>
-    
-    <div class="container content">
-        <h2 id="cours">Cours de Mathématiques</h2>
-        <p>Découvrez nos cours sur :</p>
+        <p>Retrouvez ici des cours et exercices de mathématiques.</p>
+    </section>
+
+    <!-- Section Cours -->
+    <section id="cours">
+        <h2>Cours de Mathématiques</h2>
+        <p>Découvrez nos cours :</p>
         <ul>
-            <li>Polynômes et fractions rationnelles</li>
-            <li>Calcul matriciel et systèmes linéaires (Gauss)</li>
-            <li>Espaces vectoriels</li>
+            <li><a href="cours/polynomes.pdf" target="_blank">Polynômes et fractions rationnelles</a></li>
+            <li><a href="cours/matrices.pdf" target="_blank">Calcul matriciel et systèmes linéaires</a></li>
+            <li><a href="cours/espaces_vectoriels.pdf" target="_blank">Espaces vectoriels</a></li>
         </ul>
-        
-        <h2 id="exercices">Exercices</h2>
+    </section>
+
+    <!-- Section Exercices -->
+    <section id="exercices">
+        <h2>Exercices</h2>
         <p>Voici quelques exercices :</p>
-        <p>Résolvez \( \int_0^1 x^2 dx \) et trouvez la solution.</p>
-    </div>
-    
-    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <ul>
+            <li><a href="exercices/exo1.pdf" target="_blank">Exercice 1 - Polynômes</a></li>
+            <li><a href="exercices/exo2.pdf" target="_blank">Exercice 2 - Matrices</a></li>
+            <li><a href="exercices/exo3.pdf" target="_blank">Exercice 3 - Espaces vectoriels</a></li>
+        </ul>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez nous contacter à l'adresse : <a href="mailto:contact@mathprof.com">contact@mathprof.com</a></p>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
         <p>&copy; 2025 Math Prof | Tous droits réservés</p>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
