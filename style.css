@@ -1,0 +1,90 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Barre de navigation */
+header {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Liens des cours et exercices */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2c3e50;
+    display: block;
+}
+
+/* Pied de page */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
